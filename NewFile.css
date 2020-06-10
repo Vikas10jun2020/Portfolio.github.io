@@ -1,0 +1,50 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body,html{
+	height:100%;
+}
+
+.text{
+	text-align:center;
+	position: absolute;
+  	top: 50%;
+  	left: 20%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+}
+.text h1{
+	font-size:50px;
+}
+.navbg
+{
+	background-color:transparent;
+}
+@media (max-width:800px){
+	.text{
+		text-align:center;
+		color:white;
+		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		z-index:0;
+	}
+	.text h1{
+		font-size:30px;
+	}
+	.text h3{
+		font-size:20px;
+	}
+}
+
+.animateclass{
+	background-color:white;
+	position:fixed;
+	z-index:3000;
+	border:none;
+	border-bottom-style:solid;
+	border-width:2px;
+  	border-bottom-color: blue;
+  	box-shadow: 1px 1px blue;
+}
