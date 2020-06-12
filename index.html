@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
 integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+<script src="typed.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 <link rel="stylesheet" href="NewFile.css" >
 
@@ -408,37 +408,16 @@ $(document).ready(function() {
 </script>
 
 <script>
-var txt1="I'm a Web Devoloper.";
-var txt2="I am a web developer.."
-var speed=100;
-var i=0;
-function typeWriter()
-{
-	if(i< txt1.length)
-		{
-			document.getElementById("span1").innerHTML+=txt1.charAt(i);
-			i++;
-		    setTimeout(typeWriter, speed);
-		}
-	else{
-		setTimeout(remove,speed);
-	}
-}
-function remove()
-{
-	if(i>=0)
-		{
-		var temp=txt1.substring(0,i);
-		document.getElementById("span1").innerText=temp;
-		i--;
-		setTimeout(remove,speed);
-		}
-	else{
-		setTimeout(typeWriter,speed);
-	}
-}
-
-
+var typed = new Typed('.span1', {
+	  strings: [
+		  		"Web Designer",
+		  		"Web Devoloper",
+		  		"Freelancer",
+	  			],
+	  			typeSpeed:60,
+	  			backSpeed:60,
+	  			loop:true
+	});
 </script>
 
 
